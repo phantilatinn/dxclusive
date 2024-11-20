@@ -1,0 +1,25 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dxclusive.ClassPage3"
+             BackgroundColor="White">
+
+    <VerticalStackLayout Padding="20,50,20,10" Spacing="10">
+
+        <!-- Display the selected term -->
+        <Label x:Name="TermLabel"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#872121" />
+
+        <!-- Display class data dynamically -->
+        <ScrollView>
+            <VerticalStackLayout x:Name="ClassesContainer"
+                                 Spacing="10"
+                                 Padding="0,20,0,0">
+                <!-- Class data will be added here dynamically -->
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dxclusive.MainPage">
+    <!-- Set a Linear Gradient Background -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#FFD270" Offset="0.0"/> <!-- Light Orange -->
+            <GradientStop Color="#FF914D" Offset="0.5"/> <!-- Mid Orange -->
+            <GradientStop Color="#FF4E00" Offset="1.0"/> <!-- Darker Orange -->
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <!-- Page Content -->
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <!-- Logo -->
+        <Image Source="logo.png" HeightRequest="120" />
+
+        <!-- App Title -->
+        <Label Text="DXCLUSIVE"
+               FontSize="36"
+               FontAttributes="Bold"
+               TextColor="Brown"
+               HorizontalOptions="Center"
+               Margin="0,20,0,10" />
+
+        <!-- Input Field -->
+        <Frame BackgroundColor="White"
+               CornerRadius="20"
+               Padding="10,0"
+               Margin="0,20,0,0"
+               WidthRequest="300">
+            <HorizontalStackLayout>
+                <Image Source="user_icon.png" HeightRequest="20" WidthRequest="20" />
+                <Entry Placeholder="STUDENT ID" 
+                       FontSize="18" 
+                       TextColor="Black" 
+                       HorizontalOptions="FillAndExpand" />
+            </HorizontalStackLayout>
+        </Frame>
+
+        <!-- Start Button -->
+        <Button Text="Start"
+                BackgroundColor="#D72323"
+                TextColor="White"
+                CornerRadius="20"
+                FontSize="20"
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="OnStartButtonClicked"
+                Margin="0,30,0,0"/>
+
+        <!-- Footer Logo -->
+        <Image Source="university_logo.png"
+               Margin="0,50,0,0"
+               HeightRequest="60"
+               HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>
